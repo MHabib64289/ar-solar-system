@@ -403,13 +403,14 @@
 
     <a-entity camera look-controls="enabled: false"></a-entity>
 
-    <a-marker 
-      preset="hiro" 
-      id="mainMarker" 
-      smooth="true" 
-      smoothCount="10" 
-      smoothTolerance="0.01" 
-      smoothThreshold="5">
+  <a-marker 
+  type="pattern" 
+  url="pattern-earth.patt"
+  id="mainMarker" 
+  smooth="true" 
+  smoothCount="10" 
+  smoothTolerance="0.01" 
+  smoothThreshold="5">
       
       <a-entity id="solarSystem" scale="0.8 0.8 0.8" position="0 0 0">
         
@@ -668,3 +669,4 @@
   </script>
 </body>
 </html>
+
