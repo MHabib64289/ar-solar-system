@@ -170,7 +170,38 @@
   </style>
 </head>
 <body>
+  <div class="ui-overlay">
+    <strong>🌍 AR Solar System HD</strong>
+    <div><span class="marker-type">Hiro Marker</span></div>
+    <div class="status" id="status">Memuat...</div>
+  </div>
 
+  <div class="marker-help" id="markerHelp">
+    <div class="marker-frame"></div>
+    <div class="marker-text">
+      Scan <strong>HIRO MARKER</strong><br>
+      atau marker gambar bumi
+    </div>
+  </div>
+
+  <div class="controls">
+    <button onclick="toggleEclipse()">
+      <span class="icon" id="eclipseIcon">🌑</span>
+      <span class="text" id="eclipseText">Gerhana</span>
+    </button>
+    <button onclick="toggleSpeed()">
+      <span class="icon">⚡</span>
+      <span class="text" id="speedText">1x</span>
+    </button>
+    <button onclick="toggleRotate()">
+      <span class="icon" id="rotateIcon">🔄</span>
+      <span class="text" id="rotateText">Putar</span>
+    </button>
+    <button onclick="resetCamera()">
+      <span class="icon">📷</span>
+      <span class="text">Reset</span>
+    </button>
+  </div>
 
   <a-scene
     embedded
@@ -376,4 +407,3 @@
   </script>
 </body>
 </html>
-
